@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.generic.MytestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="baseurl" value="http://dell-pc/login.do"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.scripts.LoginTest">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- com.scripts.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
